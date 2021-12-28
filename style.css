@@ -5,13 +5,14 @@
 }
 
 body {
-  background-color: #efedd6;
+  background-color: #f5f4ed;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -19,7 +20,7 @@ h1 {
 }
 
 .box {
-  background-color: steelblue;
+  background-color: rgb(62, 119, 165);
   color: #fff;
   display: flex;
   align-items: center;
@@ -33,10 +34,15 @@ h1 {
   transition: transform 0.4s ease;
 }
 
+/* selects even boxes to come in from opposite side */
 .box:nth-of-type(even) {
   transform: translateX(-400%);
 }
 
 .box.show {
   transform: translateX(0)
+}
+
+.box h2 {
+  font-size: 40px;
 }
